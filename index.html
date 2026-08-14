@@ -203,6 +203,67 @@
     .tool-grid{margin-top:42px;display:flex;flex-wrap:wrap;gap:11px}
     .tool-grid span{padding:10px 15px;border-radius:999px;border:1px solid rgba(107,51,4,.14);background:white;font-weight:700;color:#57514a}
 
+    /* experience */
+    .experience-section{background:var(--cream-2)}
+    .experience-lead{max-width:820px;margin:-8px auto 42px;text-align:center;color:var(--brown-2);font-size:17px}
+    .experience-list{display:grid;gap:30px}
+    .experience-card{
+      display:grid;grid-template-columns:360px minmax(0,1fr);gap:44px;align-items:center;
+      padding:30px;border:1px solid rgba(46,82,173,.28);border-radius:30px;
+      background:rgba(255,255,255,.58);box-shadow:0 14px 38px rgba(72,49,24,.07)
+    }
+    .experience-media{min-width:0}
+    .experience-slider{
+      position:relative;overflow:hidden;border-radius:22px;background:#eee9df;
+      box-shadow:0 12px 30px rgba(72,49,24,.10)
+    }
+    .experience-track{display:flex;transition:transform .38s ease}
+    .experience-slide{min-width:100%;margin:0;aspect-ratio:1/1.02;background:#eee9df;display:grid;place-items:center;overflow:hidden}
+    .experience-slide img{width:100%;height:100%;object-fit:cover;object-position:center}
+    .experience-controls{position:absolute;inset:auto 14px 14px;display:flex;align-items:center;justify-content:space-between;gap:12px;pointer-events:none}
+    .experience-arrow{
+      width:38px;height:38px;border:1px solid rgba(107,51,4,.16);border-radius:50%;background:rgba(255,250,242,.92);
+      color:var(--brown);font-size:20px;font-weight:800;cursor:pointer;pointer-events:auto;box-shadow:0 6px 16px rgba(72,49,24,.10)
+    }
+    .experience-dots{display:flex;gap:7px;align-items:center;justify-content:center;pointer-events:auto}
+    .experience-dot{width:8px;height:8px;border:0;border-radius:50%;padding:0;background:rgba(107,51,4,.25);cursor:pointer}
+    .experience-dot.active{background:var(--blue-dark);transform:scale(1.18)}
+    .experience-content{min-width:0}
+    .experience-year{display:inline-flex;width:fit-content;padding:9px 18px;border-radius:999px;background:var(--blue);color:#fff;font:800 14px/1 Montserrat,sans-serif}
+    .experience-content h3{margin:18px 0 12px;color:var(--blue-dark);font-size:clamp(25px,2.5vw,34px);line-height:1.2}
+    .experience-content p{margin:0;color:#5c4937;font-size:17px;line-height:1.75;text-align:justify;text-justify:inter-word}
+    .experience-link{display:inline-block;margin-top:18px;color:var(--blue-dark);font-weight:800}
+    .experience-link:hover{text-decoration:underline}
+
+    /* Odoo ERP project */
+    .odoo-showcase{
+      padding:34px;border:1px solid rgba(46,82,173,.26);border-radius:30px;
+      background:linear-gradient(145deg,rgba(255,255,255,.72),rgba(229,237,244,.48));
+      box-shadow:0 16px 44px rgba(72,49,24,.08)
+    }
+    .odoo-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:42px;align-items:start}
+    .odoo-left,.odoo-right{min-width:0}
+    .odoo-video-card{overflow:hidden;border-radius:22px;background:#171717;box-shadow:0 12px 30px rgba(72,49,24,.12)}
+    .odoo-video{width:100%;aspect-ratio:16/9;object-fit:contain;background:#171717}
+    .odoo-title-block{margin-top:28px}
+    .odoo-label{margin:0 0 12px;color:var(--blue-dark);font:800 13px/1 Montserrat,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+    .odoo-title{margin:0;line-height:1.03;letter-spacing:-.04em}
+    .odoo-title>span{display:block;color:var(--blue-dark);font:800 clamp(44px,5vw,70px)/.95 Montserrat,sans-serif}
+    .odoo-title>em{display:block;margin-top:12px;color:var(--brown);font:600 clamp(34px,3.5vw,52px)/1.08 "Dancing Script","Be Vietnam Pro",cursive;letter-spacing:0}
+    .odoo-tags{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:16px}
+    .odoo-tags span{padding:8px 14px;border:1px solid rgba(46,82,173,.25);border-radius:999px;background:rgba(255,255,255,.72);color:var(--blue-dark);font-size:13px;font-weight:800}
+    .odoo-role{margin:0 0 18px;padding:14px 17px;border-left:5px solid var(--blue-dark);border-radius:14px;background:#e5edf4;color:#313c63;line-height:1.6}
+    .odoo-copy{color:#5c4937}
+    .odoo-copy p{margin:0 0 14px;line-height:1.72;text-align:justify;text-justify:inter-word}
+    .odoo-copy strong{color:var(--blue-dark)}
+    .odoo-copy code{padding:2px 6px;border-radius:7px;background:#eef3f8;color:#254b86;font:700 13px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    .odoo-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+    .odoo-github{background:var(--brown);color:#fff}
+    .odoo-thumbs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+    .odoo-thumb{margin:0;overflow:hidden;border-radius:16px;background:#fff;border:1px solid rgba(107,51,4,.10);box-shadow:0 8px 20px rgba(72,49,24,.06)}
+    .odoo-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top center}
+    .odoo-thumb figcaption{padding:9px 12px;color:#5c4937;font-size:12px;text-align:center}
+
     /* project intro */
     .project-intro{max-width:980px}
     .project-intro-title{margin:0 0 22px;font-size:clamp(74px,8vw,112px)}
@@ -236,7 +297,7 @@
     }
     .card-link{display:block;text-decoration:none}
     .card-link:hover .card-caption{color:var(--blue-dark);font-weight:700}
-    .evidence-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,.55fr);gap:24px;align-items:start}
+    .evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
     .work-callout{margin-top:50px;padding:30px;display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:center;background:rgba(185,210,228,.18);border-radius:24px}
     .work-callout h3{margin:0 0 10px;color:var(--brown);font-size:24px}
 
@@ -255,7 +316,7 @@
     .looker-card img{width:100%;height:auto;object-fit:contain;object-position:top center}
 
     /* Project 2 */
-    .toner-overview{grid-template-columns:300px minmax(0,1fr) 260px;align-items:start}
+    .toner-overview{grid-template-columns:300px minmax(0,1fr) 300px;align-items:start}
     .video-card{background:white;border-radius:20px;overflow:hidden;box-shadow:0 10px 28px rgba(72,49,24,.08);border:1px solid rgba(107,51,4,.08)}
     .project-video{width:100%;aspect-ratio:9/16;background:#151515;object-fit:contain;object-position:center}
     .video-caption{text-align:center;padding:12px 14px;font-style:italic;color:#453d35}
@@ -300,6 +361,54 @@
     .social-stat:last-child{border-bottom:0}
     .social-stat b{color:var(--blue-dark);font:800 46px/1 Montserrat,sans-serif}
     .social-stat span{font-size:18px;line-height:1.35}
+
+
+
+    /* Project 5 - Zalo OA & Frappe CRM */
+    .crm-showcase{
+      padding:34px;border:1px solid rgba(46,82,173,.22);border-radius:30px;
+      background:linear-gradient(145deg,rgba(255,255,255,.70),rgba(229,237,244,.42));
+      box-shadow:0 16px 44px rgba(72,49,24,.08)
+    }
+    .crm-main-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:42px;align-items:start}
+    .crm-dashboard-card,.crm-evidence-card,.crm-ai-card{
+      margin:0;overflow:hidden;border-radius:20px;background:rgba(255,255,255,.90);
+      border:1px solid rgba(107,51,4,.09);box-shadow:0 10px 28px rgba(72,49,24,.07)
+    }
+    .crm-dashboard-card img{width:100%;max-height:820px;object-fit:contain;object-position:top center;background:#fff}
+    .crm-evidence-card img{width:100%;max-height:690px;object-fit:contain;object-position:top center;background:#fff}
+    .crm-ai-card img{width:100%;max-height:850px;object-fit:contain;object-position:top center;background:#fff}
+    .crm-dashboard-card figcaption,.crm-evidence-card figcaption,.crm-ai-card figcaption{
+      padding:12px 16px 15px;text-align:center;font-style:italic;color:#453d35;background:rgba(255,250,242,.90)
+    }
+    .crm-summary{min-width:0;color:#5c4937}
+    .crm-tags{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:16px}
+    .crm-tags span{padding:8px 14px;border:1px solid rgba(46,82,173,.24);border-radius:999px;background:rgba(255,255,255,.78);color:var(--blue-dark);font-size:13px;font-weight:800}
+    .crm-role{margin:0 0 18px;padding:14px 17px;border-left:5px solid var(--blue-dark);border-radius:14px;background:#e5edf4;color:#313c63;line-height:1.65}
+    .crm-copy p{margin:0 0 14px;line-height:1.75;text-align:justify;text-justify:inter-word}
+    .crm-copy strong{color:var(--blue-dark)}
+    .crm-progress-note{margin-top:20px;padding:18px 20px;border-radius:18px;background:#f5efa0;color:#51483f;line-height:1.65}
+    .crm-block{margin-top:72px}
+    .crm-block-head{display:grid;grid-template-columns:300px 1fr;gap:44px;align-items:center;margin-bottom:30px}
+    .crm-block-title{margin:0;color:var(--ink);font:800 clamp(42px,4.5vw,64px)/1 Montserrat,sans-serif;letter-spacing:-.05em}
+    .crm-block-head p{margin:0;color:#5c4937;text-align:justify;text-justify:inter-word}
+    .crm-quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+    .crm-ai-grid{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr);gap:36px;align-items:start}
+    .crm-ai-copy{padding:28px;border-radius:22px;background:rgba(185,210,228,.20);color:#4e4135}
+    .crm-ai-copy h3{margin:0 0 12px;color:var(--brown);font-size:25px}
+    .crm-ai-copy p{margin:0 0 12px;line-height:1.72;text-align:justify;text-justify:inter-word}
+    .crm-ai-copy ul{margin:14px 0 0;padding-left:20px}
+    .crm-ai-copy li{margin-bottom:8px}
+
+    @media(max-width:980px){
+      .crm-main-grid,.crm-ai-grid{grid-template-columns:1fr}
+      .crm-block-head{grid-template-columns:1fr;gap:12px}
+    }
+    @media(max-width:780px){
+      .crm-showcase{padding:20px}
+      .crm-quote-grid{grid-template-columns:1fr}
+      .crm-block{margin-top:54px}
+    }
 
     /* contact */
     .contact{position:relative;padding:120px 0 82px}
@@ -362,6 +471,26 @@
       .sales-head{flex-direction:column}
       .social-stat{grid-template-columns:115px 1fr}
       footer{flex-direction:column;align-items:flex-start}
+    }
+
+    @media(max-width:1050px){
+      .experience-card{grid-template-columns:310px minmax(0,1fr);gap:34px}
+      .odoo-grid{grid-template-columns:1fr}
+      .odoo-left{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr);gap:28px;align-items:center}
+      .odoo-title-block{margin-top:0}
+    }
+
+    @media(max-width:780px){
+      .experience-card{grid-template-columns:1fr;padding:18px;border-radius:24px;gap:24px}
+      .experience-media{width:100%}
+      .experience-slide{aspect-ratio:1/1.05}
+      .experience-content p{font-size:15px}
+      .odoo-showcase{padding:18px;border-radius:24px}
+      .odoo-left{display:block}
+      .odoo-title-block{margin-top:24px}
+      .odoo-title>span{font-size:clamp(40px,14vw,60px)}
+      .odoo-title>em{font-size:clamp(31px,10vw,44px)}
+      .odoo-thumbs{grid-template-columns:1fr}
     }
 
     @media(prefers-reduced-motion:reduce){
@@ -469,11 +598,11 @@
 
 /* Project 2: cho video lớn hơn, cân với phần nội dung */
 .toner-overview{
-  grid-template-columns:290px minmax(0,1fr) 340px;
+  grid-template-columns:300px minmax(0,1fr) 300px;
   gap:44px;
 }
 .video-card-large{
-  width:340px;
+  width:300px;
   justify-self:end;
 }
 .video-card-large .project-video{
@@ -560,9 +689,9 @@
     grid-template-columns:minmax(0,1fr) 330px;
   }
   .toner-overview{
-    grid-template-columns:260px minmax(0,1fr) 300px;
+    grid-template-columns:260px minmax(0,1fr) 260px;
   }
-  .video-card-large{width:300px}
+  .video-card-large{width:260px}
   .results-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 
@@ -592,6 +721,598 @@
     grid-template-columns:1fr;
   }
 }
+
+
+/* ===== PORTFOLIO LAYOUT REFINEMENTS V5 ===== */
+/* Giữ toàn bộ ảnh thẳng, không xoay/xéo */
+.paper-photo,
+.project-avatar,
+.about-photo {
+  transform:none !important;
+}
+
+/* Project SEO: hai ảnh minh chứng có cùng chiều ngang */
+.evidence-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  align-items:start;
+}
+.evidence-grid > *{min-width:0}
+.seo-article-link{display:block}
+.seo-article-link .media-card{height:100%}
+.seo-article-link:hover figcaption{color:var(--blue-dark);font-weight:700}
+
+/* Ảnh cấu trúc nội dung nằm ngang, không nghiêng */
+.work-callout .paper-photo{
+  transform:none !important;
+  padding:8px;
+}
+.work-callout .paper-photo img{
+  width:100%;
+  height:auto;
+  aspect-ratio:auto;
+  object-fit:contain;
+  object-position:center;
+}
+
+/* Toner: video tiêu biểu có chiều ngang bằng card sản phẩm */
+.toner-overview{
+  grid-template-columns:300px minmax(0,1fr) 300px;
+  gap:44px;
+}
+.video-card-large{
+  width:300px;
+  justify-self:end;
+}
+
+/* Cỏ Nhà: thu nhỏ cụm 3 kênh social */
+.image-grid-three{
+  width:min(900px,100%);
+  margin-inline:auto;
+  gap:18px;
+}
+.image-grid-three .link-card{border-radius:18px}
+
+/* Odoo: bỏ khung lớn bao toàn bộ nội dung, giữ nền cùng các project khác */
+.odoo-showcase{
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+.odoo-grid{gap:48px}
+.odoo-role{
+  margin:0 0 20px;
+  padding:2px 0 2px 15px;
+  border-left:4px solid var(--blue-dark);
+  border-radius:0;
+  background:transparent;
+  color:#4f463e;
+}
+.odoo-media-caption{
+  margin:12px 0 0;
+  color:#5c4937;
+  text-align:center;
+  font-style:italic;
+  font-size:13px;
+}
+.odoo-tags span{
+  background:var(--cream-2);
+  border-color:rgba(46,82,173,.20);
+}
+
+/* Zalo CRM: bỏ khung lớn và các box chữ lớn; chỉ giữ tag nhỏ + ảnh evidence */
+.crm-showcase{
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+.crm-main-grid{gap:48px}
+.crm-role{
+  margin:0 0 20px;
+  padding:2px 0 2px 15px;
+  border-left:4px solid var(--blue-dark);
+  border-radius:0;
+  background:transparent;
+  color:#4f463e;
+}
+.crm-progress-note{
+  margin-top:18px;
+  padding:0;
+  border-radius:0;
+  background:transparent;
+  color:var(--muted);
+  font-size:14px;
+}
+.crm-ai-copy{
+  padding:0;
+  border-radius:0;
+  background:transparent;
+}
+.crm-tags span{
+  background:var(--cream-2);
+  border-color:rgba(46,82,173,.20);
+}
+
+/* Quy trình báo giá: thu nhỏ 2 ảnh và căn giữa */
+.crm-quote-grid{
+  width:min(930px,100%);
+  margin-inline:auto;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+}
+.crm-evidence-card img{max-height:570px}
+.crm-evidence-card figcaption{font-size:14px}
+
+@media(max-width:1100px){
+  .toner-overview{grid-template-columns:260px minmax(0,1fr) 260px}
+  .video-card-large{width:260px}
+  .image-grid-three{width:min(820px,100%)}
+}
+
+@media(max-width:780px){
+  .evidence-grid,
+  .crm-quote-grid{grid-template-columns:1fr}
+  .toner-overview{grid-template-columns:1fr}
+  .video-card-large{width:min(88vw,340px);justify-self:center}
+  .image-grid-three{width:min(92vw,420px)}
+  .odoo-grid,
+  .crm-main-grid{gap:28px}
+}
+
+
+/* ===== PRECISION LAYOUT FIXES V6 ===== */
+
+/* Odoo: kế hoạch + BPMN nằm bên trái, ngay dưới video và cùng bề ngang cột video */
+.odoo-left{
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+}
+.odoo-left .odoo-thumbs{
+  width:100%;
+  margin-top:18px;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+.odoo-left .odoo-thumb img{
+  width:100%;
+  height:150px;
+  aspect-ratio:auto;
+  object-fit:contain;
+  object-position:center;
+  background:#fff;
+}
+.odoo-left .odoo-thumb figcaption{
+  min-height:42px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* SEO: hai evidence có cùng kích thước; thu nhỏ screenshot bài viết về bằng ảnh nghiên cứu từ khóa */
+.evidence-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+  align-items:start;
+}
+.seo-evidence-card{
+  width:100%;
+  height:430px;
+  display:flex;
+  flex-direction:column;
+}
+.seo-evidence-card img{
+  width:100%;
+  height:370px !important;
+  max-height:370px !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  background:#fff !important;
+}
+.seo-evidence-card figcaption{
+  min-height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.seo-article-link{
+  width:100%;
+}
+
+/* Toner: card sản phẩm và video có đúng cùng chiều ngang + cùng chiều cao vùng media */
+.toner-overview{
+  grid-template-columns:320px minmax(0,1fr) 320px;
+  gap:44px;
+  align-items:start;
+}
+.toner-product-card,
+.video-card-large{
+  width:320px !important;
+  justify-self:center;
+}
+.toner-product-card img,
+.video-card-large .project-video{
+  width:100%;
+  height:440px !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center !important;
+}
+.toner-product-card img{background:#eee9df}
+.video-card-large .project-video{background:#151515}
+.toner-product-card figcaption,
+.video-card-large .video-caption{
+  min-height:58px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* Báo giá: hai ảnh cùng đúng một kích thước và nhỏ hơn */
+.crm-quote-grid{
+  width:min(780px,100%);
+  margin-inline:auto;
+  grid-template-columns:repeat(2,minmax(0,360px));
+  justify-content:center;
+  gap:24px;
+}
+.crm-quote-grid .crm-evidence-card{
+  width:360px;
+  max-width:100%;
+  display:flex;
+  flex-direction:column;
+}
+.crm-quote-grid .crm-evidence-card img{
+  width:100%;
+  height:470px !important;
+  max-height:470px !important;
+  object-fit:contain !important;
+  object-position:center top !important;
+  background:#fff;
+}
+.crm-quote-grid .crm-evidence-card figcaption{
+  min-height:68px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 15px;
+}
+
+/* AI Call Summary: thu nhỏ evidence để cân với phần mô tả bên trái */
+.crm-ai-grid{
+  grid-template-columns:minmax(0,1fr) minmax(360px,460px);
+  gap:42px;
+  align-items:start;
+}
+.crm-ai-card{
+  width:min(460px,100%);
+  justify-self:center;
+}
+.crm-ai-card img{
+  width:100%;
+  height:620px !important;
+  max-height:620px !important;
+  object-fit:contain !important;
+  object-position:center top !important;
+  background:#fff;
+}
+
+@media(max-width:1100px){
+  .toner-overview{
+    grid-template-columns:280px minmax(0,1fr) 280px;
+  }
+  .toner-product-card,
+  .video-card-large{
+    width:280px !important;
+  }
+  .toner-product-card img,
+  .video-card-large .project-video{
+    height:400px !important;
+  }
+  .crm-ai-grid{
+    grid-template-columns:1fr;
+  }
+  .crm-ai-card{
+    width:min(440px,100%);
+  }
+}
+
+@media(max-width:780px){
+  .odoo-left .odoo-thumbs,
+  .evidence-grid,
+  .crm-quote-grid{
+    grid-template-columns:1fr;
+  }
+  .odoo-left .odoo-thumb img{
+    height:auto;
+    max-height:240px;
+  }
+  .seo-evidence-card{
+    height:auto;
+  }
+  .seo-evidence-card img{
+    height:auto !important;
+    max-height:420px !important;
+  }
+  .toner-overview{
+    grid-template-columns:1fr;
+  }
+  .toner-product-card,
+  .video-card-large{
+    width:min(88vw,340px) !important;
+    justify-self:center;
+  }
+  .toner-product-card img,
+  .video-card-large .project-video{
+    height:460px !important;
+  }
+  .crm-quote-grid .crm-evidence-card{
+    width:min(88vw,360px);
+    justify-self:center;
+  }
+  .crm-quote-grid .crm-evidence-card img{
+    height:460px !important;
+  }
+  .crm-ai-card{
+    width:min(88vw,400px);
+  }
+  .crm-ai-card img{
+    height:auto !important;
+    max-height:620px !important;
+  }
+}
+
+
+
+/* ===== VISUAL SCALE + HERO MOTION V7 ===== */
+/* Ảnh minh chứng lớn hơn, vẫn giữ bố cục cân đối */
+.odoo-grid{
+  grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);
+  gap:52px;
+}
+.odoo-left .odoo-thumbs{
+  gap:16px;
+  margin-top:24px;
+}
+.odoo-left .odoo-thumb img{
+  height:205px;
+}
+.odoo-left .odoo-thumb figcaption{
+  min-height:48px;
+  font-size:13px;
+}
+
+.evidence-grid{
+  width:min(1320px,calc(100vw - 56px));
+  margin-left:50%;
+  transform:translateX(-50%);
+  gap:28px;
+}
+.seo-evidence-card{
+  height:500px;
+}
+.seo-evidence-card img{
+  height:435px !important;
+  max-height:435px !important;
+}
+.seo-evidence-card figcaption{
+  min-height:65px;
+  font-size:15px;
+  padding-inline:18px;
+}
+
+/* Hover nhẹ cho ảnh/video minh chứng */
+.media-card,
+.link-card,
+.odoo-thumb,
+.odoo-video-card,
+.video-card,
+.crm-dashboard-card,
+.crm-evidence-card,
+.crm-ai-card{
+  transition:transform .32s ease, box-shadow .32s ease, border-color .32s ease;
+}
+.media-card:hover,
+.link-card:hover,
+.odoo-thumb:hover,
+.odoo-video-card:hover,
+.video-card:hover,
+.crm-dashboard-card:hover,
+.crm-evidence-card:hover,
+.crm-ai-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 44px rgba(72,49,24,.14);
+}
+.media-card img,
+.link-card img,
+.odoo-thumb img,
+.crm-dashboard-card img,
+.crm-evidence-card img,
+.crm-ai-card img{
+  transition:transform .45s ease;
+}
+.media-card:hover img,
+.link-card:hover img,
+.odoo-thumb:hover img,
+.crm-dashboard-card:hover img,
+.crm-evidence-card:hover img,
+.crm-ai-card:hover img{
+  transform:scale(1.015);
+}
+
+/* Hero Project Portfolio: chuyển động mềm, sinh động nhưng vẫn chuyên nghiệp */
+.hero{
+  isolation:isolate;
+  background-size:134px 100%, auto;
+  animation:heroStripeMove 18s linear infinite;
+}
+.hero::before,
+.hero::after{
+  content:"";
+  position:absolute;
+  border-radius:50%;
+  pointer-events:none;
+  z-index:0;
+  filter:blur(2px);
+}
+.hero::before{
+  width:330px;
+  height:330px;
+  left:-120px;
+  bottom:-105px;
+  background:radial-gradient(circle,rgba(245,239,160,.52) 0%,rgba(245,239,160,.12) 48%,transparent 72%);
+  animation:heroOrbA 8s ease-in-out infinite;
+}
+.hero::after{
+  width:300px;
+  height:300px;
+  right:-80px;
+  top:90px;
+  background:radial-gradient(circle,rgba(158,187,209,.46) 0%,rgba(158,187,209,.10) 50%,transparent 72%);
+  animation:heroOrbB 10s ease-in-out infinite;
+}
+.hero-inner{z-index:1}
+.year-sticker{
+  animation:yearFloat 4.2s ease-in-out infinite;
+  box-shadow:0 18px 38px rgba(92,126,163,.18);
+}
+.hero-project{
+  animation:projectFloat 5s ease-in-out infinite;
+}
+.hero-title{
+  transform-origin:center;
+  animation:portfolioBreath 5.6s ease-in-out infinite;
+  text-shadow:0 12px 26px rgba(107,51,4,.08);
+}
+.hero-badge{
+  animation:namePulse 4.6s ease-in-out infinite;
+  box-shadow:0 12px 30px rgba(245,239,160,.18);
+}
+.hero-deco-card{
+  animation:cardFloat 5.5s ease-in-out infinite;
+}
+.hero-pin{
+  animation:pinSwing 5.5s ease-in-out infinite;
+  transform-origin:center;
+}
+.flower-a{animation:flowerDriftA 7s ease-in-out infinite}
+.flower-b{animation:flowerDriftB 8s ease-in-out infinite}
+.hero-actions .btn{
+  position:relative;
+  overflow:hidden;
+}
+.hero-actions .btn::after{
+  content:"";
+  position:absolute;
+  top:-40%;
+  left:-80%;
+  width:42%;
+  height:180%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.48),transparent);
+  transform:rotate(18deg);
+  animation:buttonShine 4.8s ease-in-out infinite;
+}
+
+@keyframes heroStripeMove{
+  from{background-position:0 0,0 0}
+  to{background-position:268px 0,0 0}
+}
+@keyframes heroOrbA{
+  0%,100%{transform:translate3d(0,0,0) scale(1)}
+  50%{transform:translate3d(55px,-34px,0) scale(1.12)}
+}
+@keyframes heroOrbB{
+  0%,100%{transform:translate3d(0,0,0) scale(1)}
+  50%{transform:translate3d(-42px,38px,0) scale(.92)}
+}
+@keyframes yearFloat{
+  0%,100%{transform:rotate(-8deg) translateY(0)}
+  50%{transform:rotate(-5deg) translateY(-13px)}
+}
+@keyframes projectFloat{
+  0%,100%{transform:translateY(0) rotate(0deg)}
+  50%{transform:translateY(-8px) rotate(-1deg)}
+}
+@keyframes portfolioBreath{
+  0%,100%{transform:scale(1);text-shadow:0 12px 26px rgba(107,51,4,.08)}
+  50%{transform:scale(1.018);text-shadow:0 22px 42px rgba(107,51,4,.14)}
+}
+@keyframes namePulse{
+  0%,100%{transform:translateY(0);box-shadow:0 10px 26px rgba(245,239,160,.14)}
+  50%{transform:translateY(-5px);box-shadow:0 18px 38px rgba(107,51,4,.12)}
+}
+@keyframes cardFloat{
+  0%,100%{transform:rotate(-3deg) translateY(0)}
+  50%{transform:rotate(2deg) translateY(-13px)}
+}
+@keyframes pinSwing{
+  0%,100%{transform:rotate(-58deg)}
+  50%{transform:rotate(-50deg) translateY(-5px)}
+}
+@keyframes flowerDriftA{
+  0%,100%{transform:translate(0,0) rotate(0deg)}
+  50%{transform:translate(14px,-12px) rotate(20deg)}
+}
+@keyframes flowerDriftB{
+  0%,100%{transform:translate(0,0) rotate(0deg)}
+  50%{transform:translate(-12px,10px) rotate(-24deg)}
+}
+@keyframes buttonShine{
+  0%,58%{left:-80%;opacity:0}
+  66%{opacity:.9}
+  82%,100%{left:145%;opacity:0}
+}
+
+@media(max-width:1100px){
+  .odoo-grid{grid-template-columns:1fr;gap:34px}
+  .odoo-left .odoo-thumb img{height:190px}
+  .evidence-grid{width:min(100%,980px);margin-inline:auto;transform:none}
+  .seo-evidence-card{height:460px}
+  .seo-evidence-card img{height:395px !important;max-height:395px !important}
+}
+
+@media(max-width:780px){
+  .odoo-left .odoo-thumb img{height:auto;max-height:280px}
+  .evidence-grid{width:100%;margin:0;transform:none}
+  .seo-evidence-card{height:auto}
+  .seo-evidence-card img{height:auto !important;max-height:470px !important}
+  .hero{animation-duration:26s}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .hero,
+  .year-sticker,
+  .hero-project,
+  .hero-title,
+  .hero-badge,
+  .hero-deco-card,
+  .hero-pin,
+  .flower-a,
+  .flower-b,
+  .hero-actions .btn::after{
+    animation:none !important;
+  }
+  .media-card,
+  .link-card,
+  .odoo-thumb,
+  .odoo-video-card,
+  .video-card,
+  .crm-dashboard-card,
+  .crm-evidence-card,
+  .crm-ai-card,
+  .media-card img,
+  .link-card img,
+  .odoo-thumb img,
+  .crm-dashboard-card img,
+  .crm-evidence-card img,
+  .crm-ai-card img{
+    transition:none !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -602,6 +1323,7 @@
 <a href="#about">Giới thiệu</a>
 <a href="#education">Học vấn</a>
 <a href="#skills">Kỹ năng</a>
+<a href="#experience">Kinh nghiệm</a>
 <a href="#projects">Dự án</a>
 <a href="#contact">Liên hệ</a>
 </nav>
@@ -635,10 +1357,11 @@
 </div>
 <div class="toc-grid">
 <a class="toc-item reveal" href="#about"><span class="toc-num">01</span><span class="toc-label yellow">GIỚI THIỆU</span></a>
-<a class="toc-item reveal" href="#projects"><span class="toc-num">04</span><span class="toc-label blue">DỰ ÁN</span></a>
+<a class="toc-item reveal" href="#experience"><span class="toc-num">04</span><span class="toc-label blue">KINH NGHIỆM</span></a>
 <a class="toc-item reveal" href="#education"><span class="toc-num">02</span><span class="toc-label blue-2">HỌC VẤN</span></a>
-<a class="toc-item reveal" href="#contact"><span class="toc-num">05</span><span class="toc-label pale-blue">LIÊN HỆ</span></a>
+<a class="toc-item reveal" href="#projects"><span class="toc-num">05</span><span class="toc-label pale-blue">DỰ ÁN</span></a>
 <a class="toc-item reveal" href="#skills"><span class="toc-num">03</span><span class="toc-label brown">KỸ NĂNG</span></a>
+<a class="toc-item reveal" href="#contact"><span class="toc-num">06</span><span class="toc-label yellow">LIÊN HỆ</span></a>
 </div>
 </div>
 </section>
@@ -702,14 +1425,108 @@
 
 </div>
 </section>
+<!-- EXPERIENCE -->
+<section class="section framed experience-section" id="experience">
+<div class="container">
+<div class="heading-wrap reveal">
+<h2 class="script big-title">Kinh nghiệm</h2>
+<div class="heading-ribbon"></div>
+</div>
+<p class="experience-lead reveal">Những trải nghiệm bán hàng và vận hành thực tế giúp em hiểu rõ hơn hành vi khách hàng, quy trình xử lý đơn và hoạt động thương mại ở cấp độ trực tiếp.</p>
+<div class="experience-list">
+<article class="experience-card reveal">
+<div class="experience-media">
+<div class="experience-slider" data-exp-slider>
+<div class="experience-track">
+<figure class="experience-slide"><img alt="Minh chứng kinh doanh thương mại điện tử cá nhân 1" data-placeholder="minhchung-1.png" src="assets/minhchung-1.png"/></figure>
+<figure class="experience-slide"><img alt="Minh chứng kinh doanh thương mại điện tử cá nhân 2" data-placeholder="minhchung-2.png" src="assets/minhchung-2.png"/></figure>
+<figure class="experience-slide"><img alt="Minh chứng kinh doanh thương mại điện tử cá nhân 3" data-placeholder="minhchung-3.png" src="assets/minhchung-3.png"/></figure>
+</div>
+<div class="experience-controls">
+<button class="experience-arrow experience-prev" type="button" aria-label="Ảnh trước">←</button>
+<div class="experience-dots" aria-label="Chọn ảnh"></div>
+<button class="experience-arrow experience-next" type="button" aria-label="Ảnh tiếp">→</button>
+</div>
+</div>
+</div>
+<div class="experience-content">
+<div class="experience-year">2024 – 2026</div>
+<h3>Kinh doanh thương mại điện tử cá nhân</h3>
+<p>Trực tiếp mua bán các sản phẩm K-pop như card và album, vật phẩm e-sports và sách cũ. Em đã xử lý hơn <strong>100 đơn hàng</strong> và xây dựng uy tín cá nhân, được xác thực qua bài legit-check với khoảng <strong>125 phản hồi tích cực</strong> từ khách hàng.</p>
+<a class="experience-link" href="https://www.facebook.com/share/p/18nKyvQHNx/" rel="noopener noreferrer" target="_blank">Xem bài xác thực trên Facebook ↗</a>
+</div>
+</article>
+
+<article class="experience-card reveal">
+<div class="experience-media">
+<div class="experience-slider" data-exp-slider>
+<div class="experience-track">
+<figure class="experience-slide"><img alt="Cửa hàng gia đình dịp Tết" data-placeholder="tiembanhkeo.jpg" src="assets/tiembanhkeo.jpg"/></figure>
+</div>
+<div class="experience-controls">
+<button class="experience-arrow experience-prev" type="button" aria-label="Ảnh trước">←</button>
+<div class="experience-dots" aria-label="Chọn ảnh"></div>
+<button class="experience-arrow experience-next" type="button" aria-label="Ảnh tiếp">→</button>
+</div>
+</div>
+</div>
+<div class="experience-content">
+<div class="experience-year">Đầu năm 2025</div>
+<h3>Hỗ trợ bán lẻ tại cửa hàng gia đình</h3>
+<p>Hỗ trợ cửa hàng gia đình kinh doanh bánh kẹo và hàng FMCG trong dịp Tết Nguyên đán. Em trực tiếp tư vấn, bán hàng cho khách du lịch và hỗ trợ giao hàng trong khu vực, qua đó có thêm trải nghiệm thực tế về giao tiếp khách hàng và vận hành bán lẻ.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
 <!-- PROJECT INTRO -->
 <section class="section framed" id="projects">
-<div class="container project-intro-grid"><div class="project-intro-copy justify reveal"><h2 class="script project-intro-title"><span>Dự án</span><span>của Tuyền</span></h2><p>Nơi em tổng hợp những dự án nổi bật, phản ánh quá trình nghiên cứu, xây dựng ý tưởng, triển khai thực tế và theo dõi hiệu quả trong lĩnh vực E-commerce và Digital Marketing.</p></div><div class="paper-photo portrait project-avatar reveal"><div class="pin pin-bottom"></div><img alt="Ảnh mở đầu phần dự án" data-placeholder="avatar-projects.jpg" src="assets/avatar-projects.jpg"/></div></div>
+<div class="container project-intro-grid"><div class="project-intro-copy justify reveal"><h2 class="script project-intro-title"><span>Dự án</span><span>của Tuyền</span></h2><p>Nơi em tổng hợp những dự án nổi bật, phản ánh quá trình phân tích nghiệp vụ, xây dựng giải pháp, triển khai thực tế và theo dõi hiệu quả trong các lĩnh vực ERP, E-commerce và Digital Marketing.</p></div><div class="paper-photo portrait project-avatar reveal"><div class="pin pin-bottom"></div><img alt="Ảnh mở đầu phần dự án" data-placeholder="avatar-projects.jpg" src="assets/avatar-projects.jpg"/></div></div>
 </section>
-<!-- PROJECT 1 -->
+<!-- PROJECT 1: ODOO ERP -->
+<section class="project-section" id="project-odoo">
+<div class="container">
+<div class="project-kicker"><span>Project 1</span><span class="line"></span><span>ODOO ERP</span></div>
+<h2 class="script project-title reveal">Odoo ERP – Trưởng nhóm triển khai ERP cho doanh nghiệp trái cây SME</h2>
+<article class="odoo-showcase reveal">
+<div class="odoo-grid">
+<div class="odoo-left">
+<div class="odoo-video-card">
+<video class="odoo-video" controls data-video="assets/P1-Demo_Module_ Fruit_daily_pricing.mp4" playsinline preload="metadata" poster="assets/P1-kehoach.png">
+<source src="assets/P1-Demo_Module_ Fruit_daily_pricing.mp4" type="video/mp4"/>
+Trình duyệt của bạn không hỗ trợ video HTML5.
+</video>
+</div>
+<p class="odoo-media-caption">Video demo luồng nghiệp vụ và custom module trên Odoo</p>
+<div class="odoo-thumbs">
+<figure class="odoo-thumb"><img alt="Kế hoạch triển khai Odoo ERP" data-placeholder="P1-kehoach.png" src="assets/P1-kehoach.png"/><figcaption>Kế hoạch triển khai ERP</figcaption></figure>
+<figure class="odoo-thumb"><img alt="Sơ đồ quy trình BPMN" data-placeholder="P1-bpmn.png" src="assets/P1-bpmn.png"/><figcaption>Sơ đồ quy trình BPMN</figcaption></figure>
+</div>
+</div>
+<div class="odoo-right">
+<div class="odoo-tags">
+<span>Trưởng nhóm dự án</span><span>Odoo 19</span><span>Lập kế hoạch ERP</span><span>Custom Add-ons</span><span>BPMN</span>
+</div>
+<p class="odoo-role"><strong>Vai trò:</strong> Trưởng nhóm · Business Analyst · Thiết kế module · Triển khai Odoo</p>
+<div class="odoo-copy">
+<p><strong>Bối cảnh:</strong> Dự án tập trung triển khai ERP cho một doanh nghiệp SME chuyên thu mua và bán lẻ trái cây. Doanh nghiệp gặp khó khăn vì nhiều công việc vẫn được xử lý thủ công, gồm mua hàng, theo dõi tồn kho, kiểm soát chất lượng, cập nhật giá hằng ngày, ghi nhận hao hụt và tổng hợp báo cáo vận hành.</p>
+<p><strong>Trách nhiệm của em:</strong> Với vai trò trưởng nhóm kiêm người trực tiếp triển khai, em lập kế hoạch tổng thể, phân công nhiệm vụ, thiết kế logic module, theo dõi tiến độ và điều phối luồng công việc từ phân tích nghiệp vụ, mô hình hóa quy trình BPMN, chuẩn bị master data, cấu hình Odoo đến kiểm thử và demo cuối kỳ.</p>
+<p><strong>Giải pháp:</strong> Nhóm xây dựng luồng Odoo end-to-end cho Mua hàng, Kho, Bán hàng, Hóa đơn, Thanh toán và Báo cáo. Đồng thời, nhóm phát triển hai custom module: <code>fruit_fresh_operations</code> phục vụ Lot/Batch, QC, FEFO và ghi nhận hao hụt; <code>fruit_crm_daily_pricing</code> phục vụ tín hiệu thị trường từ CRM và bảng giá trái cây hằng ngày.</p>
+<p><strong>Kết quả:</strong> Hoàn thiện phiên bản ERP demo có thể vận hành trên Odoo, kèm custom modules và tài liệu triển khai, giúp nhóm trình bày rõ logic nghiệp vụ, quy trình hệ thống và giá trị mà giải pháp mang lại cho doanh nghiệp.</p>
+</div>
+<div class="odoo-actions">
+<a class="btn odoo-github" href="https://github.com/TuyenVont/odoo-fruit-erp-custom-addons" rel="noopener noreferrer" target="_blank">Xem custom add-ons trên GitHub ↗</a>
+</div>
+
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- PROJECT 2 -->
 <section class="project-section" id="project-seo">
 <div class="container">
-<div class="project-kicker"><span>Project 1</span><span class="line"></span><span>LANGDHHCM.INFO.VN</span></div>
+<div class="project-kicker"><span>Project 2</span><span class="line"></span><span>LANGDHHCM.INFO.VN</span></div>
 <h2 class="script project-title reveal">Website “Cẩm nang sinh viên Làng Đại học”</h2>
 <div class="project-overview">
 <div class="paper-photo reveal">
@@ -733,14 +1550,16 @@
 <p class="justify">Em tham gia từ giai đoạn nghiên cứu từ khóa, xây dựng kế hoạch nội dung đến triển khai và theo dõi hiệu quả bài viết. Em phụ trách nghiên cứu và viết bài SEO, trung bình khoảng 7 bài/tháng.</p>
 </div>
 <div class="evidence-grid">
-<figure class="media-card reveal">
+<figure class="media-card reveal seo-evidence-card">
 <img alt="Báo cáo phân tích từ khóa SEO" data-placeholder="seo-keyword-report.jpg" src="assets/seo-keyword-report.jpg"/>
 <figcaption>Nghiên cứu &amp; phân tích từ khóa</figcaption>
 </figure>
-<figure class="media-card reveal">
+<a class="card-link reveal seo-article-link" href="https://langdhhcm.info.vn/ktx-khu-b-lang-dai-hoc-dia-chi-so-do-gia-phong/" rel="noopener noreferrer" target="_blank">
+<figure class="media-card seo-evidence-card">
 <img alt="Bài viết SEO tiêu biểu" data-placeholder="seo-article.jpg" src="assets/seo-article.jpg"/>
-<figcaption>Bài viết tiêu biểu: Ký túc xá khu B Làng Đại học Thủ Đức</figcaption>
+<figcaption>Bài viết tiêu biểu: Ký túc xá khu B Làng Đại học Thủ Đức ↗</figcaption>
 </figure>
+</a>
 </div>
 <div class="work-callout reveal">
 <div class="paper-photo">
@@ -779,13 +1598,13 @@
 </div>
 </div>
 </section>
-<!-- PROJECT 2 -->
+<!-- PROJECT 3 -->
 <section class="project-section" id="project-toner">
 <div class="container">
-<div class="project-kicker"><span>Project 2</span><span class="line"></span><span>TONER SƠN ĐOÒNG</span></div>
+<div class="project-kicker"><span>Project 3</span><span class="line"></span><span>TONER SƠN ĐOÒNG</span></div>
 <h2 class="script project-title reveal">S:kin Heritage – Toner Sơn Đoòng</h2>
 <div class="project-overview toner-overview">
-<figure class="media-card reveal">
+<figure class="media-card reveal toner-product-card">
 <img alt="Sản phẩm Toner Sơn Đoòng" data-placeholder="toner-product.jpg" src="assets/toner-product.jpg"/>
 <figcaption>Sản phẩm Toner Sơn Đoòng</figcaption>
 </figure>
@@ -842,10 +1661,10 @@
 </div>
 </div>
 </section>
-<!-- PROJECT 3 -->
+<!-- PROJECT 4 -->
 <section class="project-section" id="project-conha">
 <div class="container">
-<div class="project-kicker"><span>Project 3</span><span class="line"></span><span>CỎ NHÀ</span></div>
+<div class="project-kicker"><span>Project 4</span><span class="line"></span><span>CỎ NHÀ</span></div>
 <h2 class="script project-title reveal">Cỏ Nhà – Trà Thảo Mộc</h2>
 <div class="project-overview">
 <figure class="media-card reveal">
@@ -897,6 +1716,79 @@
 <div class="conha-results-final reveal"><div class="results-final-head"><h3 class="script result-title">Kết quả</h3><div class="results-date">Số liệu ghi nhận đến ngày 03/06/2026</div></div><div class="results-summary-grid"><div class="summary-stat-card"><b>30</b><span>Đơn hàng</span></div><div class="summary-stat-card"><b>1.500.000đ</b><span>Tổng doanh thu</span></div><div class="summary-stat-card"><b>1.800+</b><span>Người theo dõi tại 2 kênh TikTok</span></div><div class="summary-stat-card"><b>65</b><span>Người theo dõi trên Facebook</span></div></div><div class="learning-box justify"><h4>Điều em học được</h4><p>Qua dự án, em hiểu rõ hơn mối liên hệ giữa nội dung, tư vấn khách hàng và kết quả bán hàng. Việc theo dõi phản hồi, trạng thái khách hàng và hiệu quả từng kênh giúp em rèn luyện cách đọc dữ liệu, nhận diện nội dung có tiềm năng và điều chỉnh cách tiếp cận để hỗ trợ chuyển đổi tốt hơn.</p></div></div>
 </div>
 </section>
+
+<!-- PROJECT 5 -->
+<section class="project-section" id="project-zalo-crm">
+<div class="container">
+<div class="project-kicker"><span>Project 5</span><span class="line"></span><span>ZALO OA &amp; FRAPPE CRM</span></div>
+<h2 class="script project-title reveal">Zalo OA &amp; Quản lý khách hàng | Vận hành Thương mại điện tử</h2>
+
+<div class="crm-showcase reveal">
+  <div class="crm-main-grid">
+    <figure class="crm-dashboard-card">
+      <img alt="Dashboard tổng quan hiệu suất nhân viên trên Frappe CRM" data-placeholder="zalo-crm-dashboard-hieu-suat.png" src="assets/zalo-crm-dashboard-hieu-suat.png"/>
+      <figcaption>Dashboard theo dõi hiệu suất nhân viên, Deal, doanh thu và hoạt động chăm sóc khách hàng</figcaption>
+    </figure>
+
+    <div class="crm-summary">
+      <div class="crm-tags">
+        <span>Frappe CRM</span><span>Zalo OA</span><span>WooCommerce</span><span>REST API</span><span>Webhook</span><span>BPMN</span><span>Dashboard</span><span>AI Call Summary</span>
+      </div>
+      <p class="crm-role"><strong>Vai trò:</strong> Phân tích nghiệp vụ · Cấu hình &amp; tùy chỉnh Frappe CRM · Tích hợp API/Webhook · Thiết kế quy trình · Xây dựng Dashboard</p>
+      <div class="crm-copy">
+        <p><strong>Bối cảnh:</strong> Dự án xây dựng hệ thống quản lý khách hàng trên Frappe CRM, tập trung quản lý Lead/Deal, sản phẩm, báo giá và hoạt động chăm sóc khách hàng; đồng thời phát triển các luồng tích hợp với Zalo OA và WooCommerce để giảm thao tác thủ công và tập trung dữ liệu về một hệ thống.</p>
+        <p><strong>Công việc:</strong> Em tham gia thiết kế quy trình BPMN chăm sóc Deal, tùy chỉnh dữ liệu và phân quyền người dùng, xây dựng REST API, xử lý Webhook, đồng bộ đơn hàng từ WooCommerce vào Frappe, phát triển chức năng báo giá và gửi email, đồng thời xây dựng Dashboard theo dõi hiệu suất nhân viên.</p>
+        <p><strong>Giải pháp:</strong> Frappe CRM được sử dụng làm hệ thống trung tâm. Các chức năng được mở rộng theo nhu cầu vận hành gồm quản lý Deal, Product, Quotation, email báo giá, Dashboard KPI, Call Log và phần tóm tắt cuộc gọi bằng AI để hỗ trợ nhân viên nắm nhanh nhu cầu khách hàng và công việc follow-up.</p>
+        <p><strong>Kết quả hiện tại:</strong> Đã vận hành được các luồng chính về quản lý khách hàng, báo giá, gửi email, Dashboard hiệu suất, ghi nhận cuộc gọi và AI summary; các hạng mục tự động hóa nâng cao bằng n8n và Contact Center tiếp tục được phát triển.</p>
+      </div>
+      <div class="crm-progress-note"><strong>Thời gian:</strong> Tháng 6/2026 – Hiện tại · Dự án đang tiếp tục được hoàn thiện và mở rộng.</div>
+    </div>
+  </div>
+
+  <div class="crm-block">
+    <div class="crm-block-head reveal">
+      <h3 class="crm-block-title">Quy trình báo giá</h3>
+      <p>Từ dữ liệu khách hàng và sản phẩm trong CRM, hệ thống hỗ trợ tạo báo giá, xuất nội dung thành PDF và gửi trực tiếp đến khách hàng qua email. Hai ảnh dưới đây thể hiện đầu ra thực tế của quy trình.</p>
+    </div>
+    <div class="crm-quote-grid">
+      <figure class="crm-evidence-card reveal">
+        <img alt="Email gửi báo giá từ Frappe CRM" data-placeholder="zalo-crm-email-bao-gia.png" src="assets/zalo-crm-email-bao-gia.png"/>
+        <figcaption>Email báo giá gửi cho khách hàng kèm file PDF đính kèm</figcaption>
+      </figure>
+      <figure class="crm-evidence-card reveal">
+        <img alt="PDF báo giá được tạo từ Frappe CRM" data-placeholder="zalo-crm-pdf-bao-gia.png" src="assets/zalo-crm-pdf-bao-gia.png"/>
+        <figcaption>Print Format PDF thể hiện sản phẩm, số lượng, đơn giá và tổng thanh toán</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="crm-block">
+    <div class="crm-block-head reveal">
+      <h3 class="crm-block-title">Chăm sóc khách hàng</h3>
+      <p>Call Log được lưu cùng audio và kết quả xử lý. Phần AI summary hỗ trợ tóm tắt nội dung cuộc gọi, nhận diện nhu cầu, trạng thái follow-up và các hành động cần thực hiện sau cuộc gọi.</p>
+    </div>
+    <div class="crm-ai-grid">
+      <div class="crm-ai-copy reveal">
+        <h3>AI hỗ trợ sau cuộc gọi</h3>
+        <p>Thay vì đọc lại toàn bộ ghi chú hoặc nghe lại cuộc gọi, nhân viên có thể xem nhanh phần tóm tắt và các thông tin quan trọng đã được hệ thống tổng hợp.</p>
+        <ul>
+          <li>Tóm tắt nội dung cuộc gọi.</li>
+          <li>Ghi nhận nhu cầu và vấn đề của khách hàng.</li>
+          <li>Xác định kết quả cuộc gọi và trạng thái follow-up.</li>
+          <li>Đề xuất các việc cần làm tiếp theo.</li>
+          <li>Hỗ trợ đánh giá chất lượng cuộc trao đổi.</li>
+        </ul>
+      </div>
+      <figure class="crm-ai-card reveal">
+        <img alt="AI tóm tắt cuộc gọi trong hệ thống CRM" data-placeholder="zalo-crm-ai-call-summary.png" src="assets/zalo-crm-ai-call-summary.png"/>
+        <figcaption>AI tóm tắt cuộc gọi, nhu cầu khách hàng, việc cần làm và các điểm quan trọng</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
 <!-- CONTACT -->
 <section class="contact stripe-bg" id="contact">
 <div class="container contact-grid">
@@ -971,9 +1863,44 @@
     });
   });
 
+  // experience sliders
+  document.querySelectorAll("[data-exp-slider]").forEach(slider=>{
+    const track=slider.querySelector(".experience-track");
+    const slides=[...slider.querySelectorAll(".experience-slide")];
+    const prev=slider.querySelector(".experience-prev");
+    const next=slider.querySelector(".experience-next");
+    const dotsBox=slider.querySelector(".experience-dots");
+    if(!track || !slides.length) return;
+
+    let current=0;
+    const dots=slides.map((_,i)=>{
+      const dot=document.createElement("button");
+      dot.type="button";
+      dot.className="experience-dot";
+      dot.setAttribute("aria-label",`Xem ảnh ${i+1}`);
+      dot.addEventListener("click",()=>{current=i;render()});
+      dotsBox?.appendChild(dot);
+      return dot;
+    });
+
+    const render=()=>{
+      track.style.transform=`translateX(-${current*100}%)`;
+      dots.forEach((dot,i)=>dot.classList.toggle("active",i===current));
+    };
+
+    prev?.addEventListener("click",()=>{current=(current-1+slides.length)%slides.length;render()});
+    next?.addEventListener("click",()=>{current=(current+1)%slides.length;render()});
+
+    if(slides.length<=1){
+      const controls=slider.querySelector(".experience-controls");
+      if(controls) controls.style.display="none";
+    }
+    render();
+  });
+
   // active nav
   const navLinks=[...document.querySelectorAll(".site-nav a")];
-  const targets=["about","education","skills","projects","contact"].map(id=>document.getElementById(id)).filter(Boolean);
+  const targets=["about","education","skills","experience","projects","contact"].map(id=>document.getElementById(id)).filter(Boolean);
   const activeObserver=new IntersectionObserver(entries=>{
     const current=entries.filter(x=>x.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];
     if(!current)return;
